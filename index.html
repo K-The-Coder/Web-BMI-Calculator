@@ -13,21 +13,53 @@
             <div class="input-container">
                 <table>
                     <tr>
-                        <td><label for="weight">Enter your weight: </label></td>
-                        <td><input type="text" name="weight" class="input-box" id="weight"></td>
+                        <td><label for="height">Enter your height: </label></td>
+                        <td><input type="text" name="height" class="input-box" id="height"> cm<sup>2</sup></td>
                     </tr>
                     <tr>
-                        <td><label for="height">Enter your height: </label></td>
-                        <td><input type="text" name="height" class="input-box" id="height"></td>
+                        <td><label for="weight">Enter your weight: </label></td>
+                        <td><input type="text" name="weight" class="input-box" id="weight"> kg</td>
                     </tr>
                 </table>
             </div>
-            <button class="button-container" id="btn-container" onclick="calculateBMI()">Calculate</button>
+            <div class="button-container">
+                <button class="calculate-button" id="calc-btn" onclick="calculateBMI()">Calculate</button>
+                <button class="clear-button" id="clear-btn" onclick="clearFields()">Clear</button>
+            </div>
+            
             <div class="result-container">
                 <div id="result-heading">Result:</div>
                 <div id="result"></div>
-                <div id="body-type"></div>
+                <div id="category"></div>
             </div>
         </div>
+
+        <br><br>
+
+        <table class="bmi-table" border=1>
+            <thead>
+                <th>Category</th>
+                <th>BMI range - kg/m<sup>2</sup></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Underweight</td>
+                    <td> &lt; 18.5</td>
+                </tr>
+                <tr>
+                    <td>Normal</td>
+                    <td>18.5 - 25</td>
+                </tr>
+                <tr>
+                    <td>Overweight</td>
+                    <td>25 - 30</td>
+                </tr>
+                <tr>
+                    <td>Obese</td>
+                    <td> &gt; 30</td>
+                </tr>
+            </tbody>
+            
+        </table>
     </body>
 </html>

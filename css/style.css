@@ -34,16 +34,30 @@ body{ font-family: Arial, Helvetica, sans-serif; }
     background-color: rgb(222, 247, 248);
 }
 
-.button-container{
+.calculate-button{
     border: 1px solid;
     border-radius: 3px;
     width: 140px;
     height: 50px;
-    margin-left: 32%;
+    margin-left: 20%;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 30px;
     background-color: rgb(106, 174, 206);
+}
+
+.button-container{ margin: 10px 0 5px 20px; }
+
+.clear-button{
+    border: 1px solid;
+    border-radius: 2px;
+    width: 70px;
+    height: 50px;
+    padding-top: 7px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: rgb(190, 191, 192);
 }
 
 .result-container{
@@ -59,4 +73,17 @@ body{ font-family: Arial, Helvetica, sans-serif; }
     color: rgb(44, 58, 192);
 }
 
-#result, #body-type{ font-size: 26px; }
+#result, #category{ font-size: 26px; }
+
+.bmi-table{
+    border: 1px solid black;
+    background-color: rgb(235, 250, 255);
+    margin: auto;
+    width: 450px;
+    height: 200px;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+
+.bmi-table thead{ background-color: rgb(200, 200, 200); }
+
